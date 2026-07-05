@@ -1,9 +1,42 @@
+## A Note on Process / AI Use
 
-# Software Engineering for Data Scientists 
+Throughout this project I used Claude (Anthropic) as a tutor and mentor — not to write code for me, but to guide my thinking, correct mistakes, and push me to reason through decisions. Every line of code was written and understood by me. I believe transparency about AI assistance in the learning process is important, and that knowing how to learn effectively with AI tools is itself a relevant skill for a modern data scientist.
 
-This repository contains starter code for the **Software Engineering for Data Scientists** final project. Please reference your course materials for documentation on this repository's structure and important files. Happy coding!
+# Employee Performance Dashboard
 
-### Repository Structure
+A data science dashboard for monitoring employee performance and recruitment risk, built as the final project for the Udacity Data Scientist Nanodegree Course 03: Software Engineering for Data Scientists.
+
+## Project Overview
+
+A manufacturing company wants to reduce employee turnover. This project delivers:
+- A Python package (`employee_events`) that exposes the company's SQLite database as callable query methods
+- A FastHTML dashboard allowing managers to monitor individual employee or team performance trends and predicted recruitment risk
+- Automated pytest tests with GitHub Actions CI
+
+## Setup
+
+**Requirements:** Python 3.11+
+
+```bash
+# Create and activate virtual environment
+python -m venv env
+env\Scripts\activate  # Windows
+source env/bin/activate  # Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+pip install -e python-package/
+
+Running the Dashboard
+cd report
+python dashboard.py
+Then open http://127.0.0.1:5001 in your browser.
+
+Running Tests
+pytest tests/
+
+
+## Repository Structure
 ```
 ├── README.md
 ├── assets
